@@ -1,3 +1,6 @@
-body {
-	background: red;
+body, html, ul, li, a, p, h1,
+h2, h3, header
+{
+	margin: 0;
+	padding: 0;
 }
