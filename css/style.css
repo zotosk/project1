@@ -11,7 +11,17 @@ body, html, *:after, *:before
 	font-family: sans-serif;
 }
 
-a:hover
+/*.bg-image
+{
+	background-image: url('../images/bg.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+*/
+
+div.fixed-width nav ul li a:hover
 {
 	color:#d7d7d7;
 }
@@ -35,17 +45,16 @@ a:hover
 header.main-header
 {
 	position: relative;
-	border-top: 5px solid #60DBFF;
 	padding-bottom: 2em;
 }
 
-header.main-header div.head-wrap
+.fixed-width
 {
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
 }
-header.main-header .head-wrap nav
+header.main-header .fixed-width nav
 {
 	float: right;
 	display: block;
@@ -68,11 +77,27 @@ header.main-header nav ul li a
 	font-size: 
 }
 
-header.main-header .head-wrap > div.logo 
+header.main-header .fixed-width > div.logo 
 {
 	font-family: 'Pacifico', cursive;
 	position: absolute;
 	font-size: 2rem;
 	top: 0px;
 }
+/*///// FOOTER /////*/
+
+.bg-footer
+{
+	background: rgba(230,230,230, 1);
+	padding: 20px 0;
+	text-align: center;
+	border-bottom: 5px solid rgba(236,240,241, 1);
+}
+
+.copyrights
+{
+	font-size: 0.8em;
+	font-family: 'Roboto', sans-serif;
+}
+
 
