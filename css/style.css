@@ -1,14 +1,29 @@
 body, html, ul, li, a, p, h1,
-h2, h3, header
+h2, h3, header, figure, figcaption
 {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 0.025em;
 }
 
 body, html, *:after, *:before
 {
 	box-sizing: border-box;
 	font-family: sans-serif;
+}
+
+h1, h2, h3, .fg-title
+{
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+p
+{
+	line-height: 1.3em;
+	text-align: left;
 }
 
 /*.bg-image
@@ -42,6 +57,7 @@ div.fixed-width nav ul li a:hover
 /* End hide from IE-mac */
 
 /*///// HEADER /////*/
+
 header.main-header
 {
 	position: relative;
@@ -74,7 +90,8 @@ header.main-header nav ul li a
 {
 	text-decoration: none;
 	color: inherit;
-	font-size: 
+	font-size: inherit;
+	font-weight: 400;
 }
 
 header.main-header .fixed-width > div.logo 
@@ -84,19 +101,42 @@ header.main-header .fixed-width > div.logo
 	font-size: 2rem;
 	top: 0px;
 }
-/*///// FOOTER /////*/
+/*///// SECTION MAIN-CONTENT /////*/
 
-.bg-footer
+.main-content figure
 {
-	background: rgba(230,230,230, 1);
-	padding: 20px 0;
-	text-align: center;
-	border-bottom: 5px solid rgba(236,240,241, 1);
+	padding: 1.5em;
+	background: #EFEFEF;
 }
 
-.copyrights
+.main-content figure .fg-title
 {
-	font-size: 0.8em;
+	padding-bottom: 1em;
+	font-weight: 500;
+}
+
+.main-content img.random-images
+{
+	display: block;
+}
+
+/*///// FOOTER /////*/
+
+footer
+{
+	background: rgba(230,230,230, 1);
+	border-top: solid 0.15em #F8F8F8;
+}
+
+footer .bg-footer
+{
+	background: rgba(230,230,230, 1);
+	text-align: center;
+	padding: 1.3em 0;
+}
+
+footer .copyrights
+{
 	font-family: 'Roboto', sans-serif;
 }
 

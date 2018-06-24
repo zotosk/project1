@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset ="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome</title>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -11,7 +12,7 @@
 	<!-- maybe image to add vw <div class="bg-image"> -->
 <header class="main-header">
 	<div class="fixed-width clearfix">
-		<div class="logo">Web_1</div>
+		<div class="logo">Web_Title</div>
 		<nav>
 			<ul>
 				<li><a href="#">home</a></li>
@@ -22,8 +23,17 @@
 		</nav>
 	</div>
 </header>
-<footer class="bg-footer">
-	<div class="fixed-width">
+<section class="fixed-width main-content">
+	<img src="https://loremflickr.com/960/420" class="random-images">
+	<figure class="clearfix">
+		<figcaption class="fg-title">Some Figure Title</figcaption>
+		<p>
+		It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 			
+		</p>	
+	</figure>
+</section>
+<footer class="clearfix">
+	<div class="fixed-width bg-footer">
 		<small class="copyrights">All rights Reserved.Konstantinos Zotos 2018 &copy;</small>
 	</div>
 </footer>
