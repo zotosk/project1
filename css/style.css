@@ -13,16 +13,21 @@ body, html, *:after, *:before
 	font-family: sans-serif;
 }
 
-h1, h2, h3
+h2
 {
 	display: block;
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Lobster Two', sans-serif;
+	text-transform: uppercase;
+}
+h1
+{
+	display: block;
+	font-family: 'Roboto', cursive;
 	text-transform: uppercase;
 }
 
 p
 {
-	line-height: 1.3em;
 	text-align: left;
 }
 
@@ -35,6 +40,10 @@ p
 	background-position: center;
 }
 */
+.seperate-contents
+{
+	padding: 1.5em 0;
+}
 
 div.fixed-width nav ul li a:hover
 {
@@ -56,6 +65,7 @@ div.fixed-width nav ul li a:hover
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
+
 /*///// HEADER /////*/
 
 header h2.lower-head
@@ -71,7 +81,7 @@ header.main-header
 {
 	position: relative;
 	padding-bottom: 2em;
-	border-top: solid 0.55em #F8F8F8;
+	border-top: solid 0.55em #9efbcd;
 }
 
 .fixed-width
@@ -123,12 +133,27 @@ header.main-header .fixed-width > div.logo
 .main-content figure .fg-title
 {
 	padding-bottom: 1em;
-	font-weight: 500;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .main-content img.random-images
 {
 	display: block;
+}
+
+/*///// SECTION SERVICES /////*/
+
+div.section-content-services 
+{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+div.section-content-services:last-child
+{
+	margin-right: 0;
 }
 
 /*///// FOOTER /////*/
