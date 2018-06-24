@@ -4,3 +4,75 @@ h2, h3, header
 	margin: 0;
 	padding: 0;
 }
+
+body, html, *:after, *:before
+{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+a:hover
+{
+	color:#d7d7d7;
+}
+
+.clearfix:after 
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/*///// HEADER /////*/
+header.main-header
+{
+	position: relative;
+	border-top: 5px solid #60DBFF;
+	padding-bottom: 2em;
+}
+
+header.main-header div.head-wrap
+{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+header.main-header .head-wrap nav
+{
+	float: right;
+	display: block;
+	text-transform: capitalize;
+}
+
+header.main-header nav ul li
+{
+	float: left;
+	display: block;
+	padding-top: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 2em;
+}
+
+header.main-header nav ul li a
+{
+	text-decoration: none;
+	color: inherit;
+	font-size: 
+}
+
+header.main-header .head-wrap > div.logo 
+{
+	font-family: 'Pacifico', cursive;
+	position: absolute;
+	font-size: 2rem;
+	top: 0px;
+}
+
