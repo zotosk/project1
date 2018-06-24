@@ -156,6 +156,17 @@ div.section-content-services:last-child
 	margin-right: 0;
 }
 
+div.section-content-services > a
+{
+	border: 1px solid grey;
+	text-decoration: none;
+	padding-right: 1.1em;
+	padding-left: 1.1em;
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	border-radius: 200px;
+	
+}
 /*///// FOOTER /////*/
 
 footer
