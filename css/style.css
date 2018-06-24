@@ -13,7 +13,7 @@ body, html, *:after, *:before
 	font-family: sans-serif;
 }
 
-h1, h2, h3,
+h1, h2, h3
 {
 	display: block;
 	font-family: 'Lobster Two', cursive;
@@ -71,6 +71,7 @@ header.main-header
 {
 	position: relative;
 	padding-bottom: 2em;
+	border-top: solid 0.55em #F8F8F8;
 }
 
 .fixed-width
@@ -122,7 +123,7 @@ header.main-header .fixed-width > div.logo
 .main-content figure .fg-title
 {
 	padding-bottom: 1em;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .main-content img.random-images
@@ -135,7 +136,7 @@ header.main-header .fixed-width > div.logo
 footer
 {
 	background: rgba(230,230,230, 1);
-	border-top: solid 0.15em #F8F8F8;
+	border-top: solid 0.55em #F8F8F8;
 }
 
 footer .bg-footer
