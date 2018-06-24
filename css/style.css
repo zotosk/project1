@@ -13,10 +13,10 @@ body, html, *:after, *:before
 	font-family: sans-serif;
 }
 
-h1, h2, h3, .fg-title
+h1, h2, h3,
 {
 	display: block;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lobster Two', cursive;
 	text-transform: uppercase;
 }
 
@@ -58,6 +58,15 @@ div.fixed-width nav ul li a:hover
 
 /*///// HEADER /////*/
 
+header h2.lower-head
+{
+	display: block;
+	color: #CCCCCC;
+	font-size: 0.90rem;
+	opacity: 0.6;
+	text-transform: capitalize;
+}
+
 header.main-header
 {
 	position: relative;
@@ -96,10 +105,11 @@ header.main-header nav ul li a
 
 header.main-header .fixed-width > div.logo 
 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Lobster Two', cursive;
 	position: absolute;
 	font-size: 2rem;
-	top: 0px;
+	bottom: 0px;
+	font-weight: bolder;
 }
 /*///// SECTION MAIN-CONTENT /////*/
 
@@ -112,7 +122,7 @@ header.main-header .fixed-width > div.logo
 .main-content figure .fg-title
 {
 	padding-bottom: 1em;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .main-content img.random-images
