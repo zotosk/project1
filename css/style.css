@@ -43,9 +43,10 @@ p
 .seperate-contents
 {
 	padding: 1.5em 0;
+	display: block;
 }
 
-div.fixed-width nav ul li a:hover
+div.menu-nav nav ul li a:hover
 {
 	color:#d7d7d7;
 }
@@ -75,13 +76,15 @@ header h2.lower-head
 	font-size: 0.90rem;
 	opacity: 0.6;
 	text-transform: capitalize;
+	position: relative;
+	right: 3px;
 }
 
 header.main-header
 {
 	position: relative;
 	padding-bottom: 2em;
-	border-top: solid 0.55em #9efbcd;
+    border-top: solid 0.55em #9efbcd;
 }
 
 .fixed-width
@@ -90,7 +93,7 @@ header.main-header
 	width: 960px;
 	margin: 0 auto;
 }
-header.main-header .fixed-width nav
+header.main-header .menu-nav nav
 {
 	float: right;
 	display: block;
@@ -112,6 +115,7 @@ header.main-header nav ul li a
 	color: inherit;
 	font-size: inherit;
 	font-weight: 400;
+	position: relative;
 }
 
 header.main-header .fixed-width > div.logo 
@@ -128,6 +132,7 @@ header.main-header .fixed-width > div.logo
 {
 	padding: 1.5em;
 	background: #EFEFEF;
+	border-top: 5px solid #9efbcd;
 }
 
 .main-content figure .fg-title
@@ -149,7 +154,26 @@ div.section-content-services
 	float: left;
 	width: 30%;
 	margin-right: 5%;
+	text-align: center;
 }
+
+.section-content-services header.insert-icon:before
+{
+	display: inline-block;
+	padding-bottom:1.8em; padding-top:1.8em; 
+}
+	.section-content-services header.chart-icon:before
+	{
+		content: url(../images/chart64x64.ico);
+	}
+	.section-content-services header.database-icon:before
+	{
+		content: url(../images/database64x64.ico);
+	}
+	.section-content-services header.seo-icon:before
+	{
+		content: url(../images/seo64x64.ico);
+	}
 
 div.section-content-services:last-child
 {
@@ -158,15 +182,32 @@ div.section-content-services:last-child
 
 div.section-content-services > a
 {
-	border: 1px solid grey;
 	text-decoration: none;
 	padding-right: 1.1em;
 	padding-left: 1.1em;
 	padding-top: 0.9em;
 	padding-bottom: 0.9em;
-	border-radius: 200px;
-	
+	color: grey;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1.8em;
+	background: #9efbcd;
+	border-radius: 2px;
 }
+
+div.section-content-services > a:hover
+{
+	color:#000;
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.11);
+	-moz-box-shadow:    3px 3px 0px 0px rgba(50, 50, 50, 0.11);
+	box-shadow:         3px 3px 0px 0px rgba(50, 50, 50, 0.11);
+}
+
+.seperate-contents p
+{
+	text-align: center;
+}
+
 /*///// FOOTER /////*/
 
 footer
