@@ -22,13 +22,8 @@ h2
 h1
 {
 	display: block;
-	font-family: 'Roboto', cursive;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-}
-
-p
-{
-	text-align: left;
 }
 
 /*.bg-image
@@ -40,6 +35,14 @@ p
 	background-position: center;
 }
 */
+
+.fixed-width
+{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
 .seperate-contents
 {
 	padding: 1.5em 0;
@@ -87,12 +90,7 @@ header.main-header
     border-top: solid 0.55em #9efbcd;
 }
 
-.fixed-width
-{
-	position: relative;
-	width: 960px;
-	margin: 0 auto;
-}
+
 header.main-header .menu-nav nav
 {
 	float: right;
@@ -120,7 +118,7 @@ header.main-header nav ul li a
 
 header.main-header .fixed-width > div.logo 
 {
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Lobster Two', sans-serif;
 	position: absolute;
 	font-size: 2rem;
 	bottom: 0px;
