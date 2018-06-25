@@ -90,6 +90,14 @@ header.main-header
     border-top: solid 0.55em #9efbcd;
 }
 
+header.main-header h1
+{
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	top: -300px;
+	left: -300px;
+}
 
 header.main-header .menu-nav nav
 {
